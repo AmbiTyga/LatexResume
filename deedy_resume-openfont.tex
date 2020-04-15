@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Ambesh}{Shekhar}{ \urlstyle{same}\url{https://github.com/AmbiTyga} \\
+\href{mailto:ambesh.sinha@gmail.com}{ambesh.sinha@gmail.com} | +91-8825-2728-21
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% 利用tikz来定位照片，部分招聘单位可能需要“以貌取人”
+% \begin{tikzpicture}[remember picture, overlay] 
+%   \node[anchor = north west] at ($(current page.north west)+(+1cm,-4cm)$) {\includegraphics[height=4.2cm]{620521198912304471}};
+% \end{tikzpicture}%
+
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+% ~\\
+
+\section{EDUCATION} 
+
+\subsection{\href{www.bitmesra.ac.in}{BIT Mesra}}
+\descript{B.E in Computer Science}
+\descript{and Engineering}
+\location{2017-Present}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{链接} 
+% GitHub://  \href{https://github.com/fuujiro}{\custombold{@fuujiro}} \\
+% Blog://  \href{https://blog.fuujiro.com}{\custombold{fuujiro's island}} \\
+% 知乎:// \href{https://www.zhihu.com/people/fuujiro/activities}{\custombold{fuujiro}} \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{COURSEWORK}
+\quad \\
+\subsection{UNDERGRADUATE}
+
+Fundamental of Data Structure \\
+Object Oriented Programming \\ 
+Advanced Design and Analysis of Algorithms \\ 
+Artificial Intelligence \\ 
+Operating Systems \\ 
+Database System \\ 
+Computer Networks \\ 
+Computer Structure and Architecture \\ 
+
+\sectionsep
+
+\subsection{INDEPENDENT}
+
+\href{https://online.codingblocks.com/app/certificates/CBOL-26635-2848}{Machine Learning Course (Coding Blocks)} \\
+\href{http://cs229.stanford.edu/}{CS 229 Machine Learning} \\
+\href{https://cs230.stanford.edu/}{CS 230 Deep Learning} \\
+\href{https://coursera.org/share/0d85004d7396f79556aa1a92de8a3ab5}{Natural Language Processing Tensorflow (Coursera)} \\
+Sequence Model(Coursera) \\
+Improving Deep Learning Network(Coursera) \\
+Sequences, Time Series and Predictions(Coursera) \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SKILLS}
+\subsection{PROGRAMMING}
+\textbullet{}   C/C++ \textbullet{}   Python \textbullet{} Java \\
+\textbullet{} R \textbullet{} Android \textbullet{} Dart \\ 
+\textbullet{} Javascript 
+\sectionsep
+\subsection{SCIENTIFIC LIBRARIES}
+\textbullet{} Keras \textbullet{} Tensorflow \textbullet{} Pytorch \\
+\textbullet{} Scikit-learn \textbullet{} Pandas \textbullet{} Numpy \\
+\textbullet{} NLTK \textbullet{} Librosa \textbullet{} OpenCV \\ 
+\sectionsep
+\subsection{SOFTWARE AND TOOLS}
+\textbullet{} PyCharm \textbullet{} Arduino \textbullet{} Raspbian \\
+\textbullet{} Flutter \textbullet{} Android \textbullet{} MATLAB \\
+\sectionsep
+\subsection{PERSONALITY SKILLS}
+\textbullet{} Leadership \textbullet{} Communication \\
+\textbullet{} Management \textbullet{} Team Work
+\sectionsep
+\subsection{Language}
+\textbullet{Native} Hindi\\
+\textbullet{Advanced} English\\
+\textbullet{Basic} French\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+
+\runsubsection{\href{https://colab.research.google.com/drive/1M54U4ifasZD6KcfdBkB7Opi3GhnRABxT}{{MemSem: A Multimodal framework for sentiment analysis}}}
+\location{Feb 2020 - Present}
+MemSem is a neural network project which determines the sentiment analysis
+of posted memes. Working on improving the accuracy and training on huge
+datasets. \\
+
+\textbullet{} Based on Multimodal neural network(Visual and Textual). \\
+\textbullet{} Works on images and OCR extracted text from memes. \\
+\textbullet{} Trained on multimodal network of VGG19 and BERT-based model. \\
+\textbullet{} Determines sentiment of memes. \\
+\sectionsep
+
+\runsubsection{\href{https://github.com/AmbiTyga/DeafDance}{{DeafDance}}}
+\location{Jan 2020}
+DeafDance is UI based script to understand sign-languages. Working on image
+segmentation and calibrations of pixels in the images and trying pre-trained
+models. \\
+
+\textbullet{} Based on image processing and Computer vision. \\
+\textbullet{} CNN trained on 2515 hand-sign images. \\
+\textbullet{} Deployed with UI created using openCV. \\
+\textbullet{} Predicts the gesture from webcam.\\
+\sectionsep
+
+\runsubsection{\href{https://github.com/AmbiTyga/hiLyted}{{hiLyted}}}
+\location{Dec 2019}
+hiLyted helps in creating highlights of matches from the given sources, covering
+up the best moments of tournaments and games \\
+
+\textbullet{} Based on Speech Analysis \\
+\textbullet{} Processes audio from the video using Librosa. \\
+\textbullet{} Clips match videos using moviepy. \\
+\sectionsep
+
+\runsubsection{\href{https://github.com/AmbiTyga/Pothole_Detection}{{Pothole Detection}}}
+\location{June 2019}
+Pothole_Detection is full scale ML engine for real-time pothole detection.
+Working on the con- currency issue in the RCNN and increasing the accuracy
+of the output.\\
+\textbullet{} Based on Masked-RCNN. \\
+\textbullet{} Captures images using Raspberry-Pi and processes those images. \\
+\textbullet{} Predicts pothole in the way by using trained model imported from AWS sagemaker. \\
+\sectionsep
+
+% \runsubsection{\href{https://www.moberries.com/}{{MoBerries}}}
+% \location{Jul 2016 – May 2017 | BuzzBlare, Lahore.}
+% MoBerries is a revolutionized form of old-fashioned recruitment business. I have worked on its admin panel's front-end using Reactjs and Redux along with Material-UI for an amazing look and feel.
+% \sectionsep
+
+% \runsubsection{\href{https://playven.com/}{{Playven}}}
+% \location{Jul 2016 – Nov 2016 | BuzzBlare, Lahore.}
+% Playven is the easiest way to find your nearest sports venues and book a court. I worked on Reactjs and Redux version of this app.
+% \sectionsep
+
+% \runsubsection{\href{https://play.google.com/store/apps/details?id=com.abdulwasaetariq.odnvt}{{Optical Dictionary \& Vocabulary Teacher}}}
+% \location{Aug 2015 – June 2016 | FAST-NUCES, Lahore.}
+% This Mobile App provides a user with the ease of querying a dictionary. The user just has to focus the camera of his/her smart-phone over the word encountered and the application will show its’ meaning. I worked on its AI part, implementing an algorithm to classify letters.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EXTRA-CURRICULAR}
+
+\runsubsection{Technical Club : Electronics and Communication } \\
+\descript{| Secratary and Technical Support }
+\location{Oct 2019 – Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Held Xordium. A technical festival for technology nerds presenting their projects.
+\item Held a workshop on Competitive Programming and Machine learning workshop.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Robonauts}
+\descript{| Member }
+\location{June 2018 - April 2019}
+\begin{tightemize}
+\item Member of robotics club of our college. Made IOT projects under guidance of seniors.
+\item Took part in Techkriti19, made an IOT device for home automation.
+
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+
+\textbullet{} \runsubsection{\href{https://drive.google.com/file/d/1YIRLa9Qt6k5Ax9tsddHiwMv6BL78XteQ/view?usp=sharing}{{2nd Position in Internal Hackathon for SIH-2020}}}
+% \textbullet{} \runsubsection{\href{https://drive.google.com/file/d/1YIRLa9Qt6k5Ax9tsddHiwMv6BL78XteQ/view?usp=sharing}{{2nd Position in Internal Hackathon for SIH-2020}}}\\
+% \textbullet{} Sports e.g. Cricket, Football\\
+\sectionsep
+
+\end{minipage} 
+\end{document}

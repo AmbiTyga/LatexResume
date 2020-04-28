@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
+\usepackage[hmargin=1.1cm, vmargin=0.5cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -71,7 +71,7 @@ Last Updated on
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 \newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\ {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}

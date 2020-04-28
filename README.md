@@ -1,3 +1,3 @@
 # LatexResume
 Interactive resume built using LaTeX
-![Resume](Resume.pdf)
+![Resume](/fonts/cv.jpg)

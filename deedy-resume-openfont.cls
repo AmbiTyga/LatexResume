@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.1cm, vmargin=0.5cm]{geometry}
+\usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -17,13 +17,9 @@
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
-\usepackage[UTF8, scheme=plain, punct=plain, zihao=false]{ctex}
-\setCJKfamilyfont{hwk}{STKaiti}   
-
-%%%% 利用tikz来定位照片和学校Logo
-\usepackage{graphicx}
-\usepackage{tikz}
-\usetikzlibrary{calc}
+\usepackage{fontawesome}
+\usepackage[misc]{ifsym}
+\usepackage{mathptmx}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
@@ -84,4 +80,3 @@ Last Updated on
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
-
